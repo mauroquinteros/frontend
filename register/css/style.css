@@ -1,91 +1,93 @@
-// Variables
-$main-color-1 : #21c08b;
-$main-color-2 : #8f57fd;
-$font-family: Arial;
-$white: #fff;
-
-// Globals
-.margin{
+.margin, p, body {
   margin: 0;
 }
-body{
-  @extend .margin;
-  background: linear-gradient($main-color-1, $main-color-2);
+
+body {
+  background: linear-gradient(#21c08b, #8f57fd);
   background-repeat: no-repeat;
-  font-family: $font-family;
+  font-family: Arial;
 }
-p{
-  @extend .margin;
-}
-h2{
+
+h2 {
   margin-top: 0;
 }
-::placeholder{
-  color: $white;
-  font-family: $font-family;
+
+::placeholder {
+  color: #fff;
+  font-family: Arial;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
-::-webkit-scrollbar-button{
+
+::-webkit-scrollbar-button {
   display: none;
 }
-::-webkit-scrollbar-thumb{
-  background: rgba($color: #000000, $alpha: .4);
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
 }
-::-webkit-scrollbar-track{
-  background: $white;
+
+::-webkit-scrollbar-track {
+  background: #fff;
   border-radius: 5px;
 }
-::-webkit-scrollbar-corner{
+
+::-webkit-scrollbar-corner {
   background: transparent;
 }
-.title{
-  color: $white;
+
+.title {
+  color: #fff;
   font-size: 1.2em;
   margin-left: 20px;
   margin-top: 60px;
 }
-.title:nth-of-type(1){
+
+.title:nth-of-type(1) {
   margin-top: 0;
 }
-.flex {
+
+.flex, .footer, .login-social-media > a, .login, .header-menu-profile, .header-menu, .header {
   display: flex;
   align-items: center;
 }
 
-// Header
-.header{
+.header {
   width: 100%;
   height: 80px;
-  @extend .flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.header-img{
+
+.header-img {
   width: 200px;
   margin-left: 20px;
 }
-.header-menu{
+
+.header-menu {
   margin-right: 20px;
   height: inherit;
-  @extend .flex;
   cursor: pointer;
 }
-.header-menu:hover ul, ul:hover{
+
+.header-menu:hover ul, ul:hover {
   cursor: pointer;
   display: block;
 }
-.header-menu-profile{
-  @extend .flex;
-  color: $white;
+
+.header-menu-profile {
+  color: #fff;
 }
-.header-menu-profile img{
+
+.header-menu-profile img {
   width: 40px;
   margin-right: 10px;
 }
-.header-menu ul{
+
+.header-menu ul {
   display: none;
   list-style: none;
   padding: 0;
@@ -95,28 +97,31 @@ h2{
   text-align: right;
   margin-left: -14px;
 }
-.header-menu li{
+
+.header-menu li {
   margin: 10px 0;
 }
+
 .header-menu li a {
   text-decoration: none;
-  color: $white;
+  color: #fff;
 }
-.header-menu li a:hover{
+
+.header-menu li a:hover {
   text-decoration: underline;
 }
-// Login
-.login{
-  @extend .flex;
+
+.login {
   flex-direction: column;
   justify-content: center;
   padding: 0 30px;
 }
-.login-container{
-  background: rgba($color: #000000, $alpha: .1);
-  border: 2px solid $white;
+
+.login-container {
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
   border-radius: 40px;
-  color: $white;
+  color: #fff;
   padding: 60px 68px;
   min-height: calc(100vh - 320px);
   width: 300px;
@@ -124,105 +129,121 @@ h2{
   flex-direction: column;
   justify-content: space-between;
 }
-.login-form{
+
+.login-form {
   display: flex;
   flex-direction: column;
 }
-.login-form label{
+
+.login-form label {
   font-size: 14px;
 }
-.input{
+
+.input {
   border: none;
-  border-bottom: 2px solid $white;
+  border-bottom: 2px solid #fff;
   font-size: 15px;
   background: transparent;
   outline: none;
   margin-bottom: 20px;
   padding: 0 10px;
   height: 50px;
-  color: $white;
+  color: #fff;
 }
-.button{
+
+.button {
   display: block;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, 0.2);
   border: none;
   outline: none;
   border-radius: 25px;
-  color: $white;
+  color: #fff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  font-family: $font-family;
+  font-family: Arial;
   letter-spacing: 1px;
   padding: 15px 0;
 }
-.button:hover{
-  background: rgba(255, 255, 255, .3);
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
-.login-remember{
-  color: $white;
+
+.login-remember {
+  color: #fff;
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
 }
-.login-remember a{
+
+.login-remember a {
   text-decoration: none;
-  color: $white;
+  color: #fff;
   font-size: 14px;
 }
 
-.login-remember a:hover{
+.login-remember a:hover {
   text-decoration: underline;
 }
-.login-social-media > a{
-  @extend .flex;
+
+.login-social-media > a {
   font-size: 14px;
   margin-bottom: 10px;
   text-decoration: none;
-  color: $white;
+  color: #fff;
 }
-.login-social-media > a:hover{
+
+.login-social-media > a:hover {
   text-decoration: underline;
 }
-.login-social-media > a img{
+
+.login-social-media > a img {
   margin-right: 10px;
   width: 25px;
 }
-.login-register{
+
+.login-register {
   font-size: 14px;
-  a{
-    color: $white;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 600;
-  }
 }
-.login-register a:hover{
+.login-register a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register a:hover {
   text-decoration: underline;
 }
-.option-login{
+
+.option-login {
   display: inline-block;
   text-decoration: none;
-  color: $white;
+  color: #fff;
   font-size: 14px;
   text-align: center;
 }
-.option-login:hover{
+
+.option-login:hover {
   text-decoration: underline;
 }
-// Footer
-.footer{
-  @extend .flex;
+
+.footer {
   height: 76px;
   width: 100%;
   margin-top: 20px;
 }
-.footer a{
+
+.footer a {
   text-decoration: none;
-  color: $white;
+  color: #fff;
   font-size: 15px;
   padding-left: 20px;
 }
-.footer a:hover{
+
+.footer a:hover {
   text-decoration: underline;
 }
+
+/*# sourceMappingURL=style.css.map */
