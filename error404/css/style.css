@@ -1,0 +1,167 @@
+.margin, p, body {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(#21c08b, #8f57fd);
+  background-repeat: no-repeat;
+  font-family: Arial;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: Arial;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+.title:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.flex, .footer, .error, .header-menu-profile, .header-menu, .header {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.header-menu {
+  margin-right: 20px;
+  height: inherit;
+  cursor: pointer;
+}
+
+.header-menu:hover ul, ul:hover {
+  cursor: pointer;
+  display: block;
+}
+
+.header-menu-profile {
+  color: #fff;
+}
+
+.header-menu-profile img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header-menu ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  width: 100px;
+  text-align: right;
+  margin-left: -14px;
+}
+
+.header-menu li {
+  margin: 10px 0;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-menu li a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  height: calc(100vh - 220px);
+  justify-content: center;
+}
+
+.error-details {
+  width: 90%;
+  display: inherit;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.error-title {
+  margin-top: 0;
+  font-size: 5em;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.footer {
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
